@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LivroAPI</name>
+    </assembly>
+    <members>
+        <member name="M:EmprestimoAPI.Controllers.EmprestimoController.AdicionaEmprestimo(LivroAPI.Data.Dtos.CreateEmprestimoDto)">
+            <summary>
+            Add books to Database
+            </summary>
+            <param name="emprestimoDto">Object with all parameters necessity</param>
+            <returns>IActionResult</returns>
+            <response code="201">In case of succeded action</response>
+        </member>
+        <member name="M:EnderecoAPI.Controllers.EnderecoController.AdicionaEndereco(LivroAPI.Data.Dtos.CreateEnderecoDto)">
+            <summary>
+            Add books to Database
+            </summary>
+            <param name="enderecoDto">Object with all parameters necessity</param>
+            <returns>IActionResult</returns>
+            <response code="201">In case of succeded action</response>
+        </member>
+        <member name="M:LivrariaAPI.Controllers.LivrariaController.AdicionaLivraria(LivroAPI.Data.Dtos.CreateLivrariaDto)">
+            <summary>
+            Add books to Database
+            </summary>
+            <param name="livrariaDto">Object with all parameters necessity</param>
+            <returns>IActionResult</returns>
+            <response code="201">In case of succeded action</response>
+        </member>
+        <member name="M:LivroAPI.Controllers.LivroController.AdicionaLivro(LivroAPI.Data.Dtos.CreateLivroDto)">
+            <summary>
+            Add books to Database
+            </summary>
+            <param name="livroDto">Object with all parameters necessity</param>
+            <returns>IActionResult</returns>
+            <response code="201">In case of succeded action</response>
+        </member>
+        <member name="T:LivroAPI.Migrations.EnderecoLivrariaLivro">
+            <inheritdoc />
+        </member>
+        <member name="M:LivroAPI.Migrations.EnderecoLivrariaLivro.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:LivroAPI.Migrations.EnderecoLivrariaLivro.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:LivroAPI.Migrations.EnderecoLivrariaLivro.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:LivroAPI.Migrations.PessoaeEmprestimo">
+            <inheritdoc />
+        </member>
+        <member name="M:LivroAPI.Migrations.PessoaeEmprestimo.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:LivroAPI.Migrations.PessoaeEmprestimo.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:LivroAPI.Migrations.PessoaeEmprestimo.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:PessoaAPI.Controllers.PessoaController.AdicionaPessoa(LivroAPI.Data.Dtos.CreatePessoaDto)">
+            <summary>
+            Add books to Database
+            </summary>
+            <param name="pessoaDto">Object with all parameters necessity</param>
+            <returns>IActionResult</returns>
+            <response code="201">In case of succeded action</response>
+        </member>
+    </members>
+</doc>

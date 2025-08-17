@@ -1,0 +1,627 @@
+[
+  {
+    "ContainingType": "EmprestimoAPI.Controllers.EmprestimoController",
+    "Method": "AdicionaEmprestimo",
+    "RelativePath": "Emprestimo",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "emprestimoDto",
+        "Type": "LivroAPI.Data.Dtos.CreateEmprestimoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EmprestimoAPI.Controllers.EmprestimoController",
+    "Method": "RecuperaEmprestimo",
+    "RelativePath": "Emprestimo",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "skip",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "take",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[LivroAPI.Data.Dtos.ReadEmprestimoDto, LivroAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "EmprestimoAPI.Controllers.EmprestimoController",
+    "Method": "RecuperaEmprestimoPorID",
+    "RelativePath": "Emprestimo/{livroId}/{pessoaId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "livroId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "pessoaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EmprestimoAPI.Controllers.EmprestimoController",
+    "Method": "AtualizaEmprestimo",
+    "RelativePath": "Emprestimo/{livroId}/{pessoaId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "livroId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "pessoaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "emprestimoDto",
+        "Type": "LivroAPI.Data.Dtos.UpdateEmprestimoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EmprestimoAPI.Controllers.EmprestimoController",
+    "Method": "AtualizaEmprestimoParcial",
+    "RelativePath": "Emprestimo/{livroId}/{pessoaId}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "livroId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "pessoaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "patch",
+        "Type": "Microsoft.AspNetCore.JsonPatch.Operations.Operation[]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EmprestimoAPI.Controllers.EmprestimoController",
+    "Method": "AtualizaEmprestimoParcial",
+    "RelativePath": "Emprestimo/{livroId}/{pessoaId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "livroId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "pessoaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EnderecoAPI.Controllers.EnderecoController",
+    "Method": "AdicionaEndereco",
+    "RelativePath": "Endereco",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "enderecoDto",
+        "Type": "LivroAPI.Data.Dtos.CreateEnderecoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EnderecoAPI.Controllers.EnderecoController",
+    "Method": "RecuperaEndereco",
+    "RelativePath": "Endereco",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "skip",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "take",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[LivroAPI.Data.Dtos.ReadEnderecoDto, LivroAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "EnderecoAPI.Controllers.EnderecoController",
+    "Method": "RecuperaEnderecoPorID",
+    "RelativePath": "Endereco/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EnderecoAPI.Controllers.EnderecoController",
+    "Method": "AtualizaEndereco",
+    "RelativePath": "Endereco/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "EnderecoDto",
+        "Type": "LivroAPI.Data.Dtos.UpdateEnderecoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EnderecoAPI.Controllers.EnderecoController",
+    "Method": "AtualizaEnderecoParcial",
+    "RelativePath": "Endereco/{id}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "patch",
+        "Type": "Microsoft.AspNetCore.JsonPatch.Operations.Operation[]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EnderecoAPI.Controllers.EnderecoController",
+    "Method": "AtualizaEnderecoParcial",
+    "RelativePath": "Endereco/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LivrariaAPI.Controllers.LivrariaController",
+    "Method": "AdicionaLivraria",
+    "RelativePath": "Livraria",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "livrariaDto",
+        "Type": "LivroAPI.Data.Dtos.CreateLivrariaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LivrariaAPI.Controllers.LivrariaController",
+    "Method": "RecuperaLivraria",
+    "RelativePath": "Livraria",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "skip",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "take",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[LivroAPI.Data.Dtos.ReadLivrariaDto, LivroAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "LivrariaAPI.Controllers.LivrariaController",
+    "Method": "RecuperaLivrariaPorID",
+    "RelativePath": "Livraria/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LivrariaAPI.Controllers.LivrariaController",
+    "Method": "AtualizaLivraria",
+    "RelativePath": "Livraria/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "livrariaDto",
+        "Type": "LivroAPI.Data.Dtos.UpdateLivrariaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LivrariaAPI.Controllers.LivrariaController",
+    "Method": "AtualizaLivrariaParcial",
+    "RelativePath": "Livraria/{id}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "patch",
+        "Type": "Microsoft.AspNetCore.JsonPatch.Operations.Operation[]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LivrariaAPI.Controllers.LivrariaController",
+    "Method": "AtualizaLivrariaParcial",
+    "RelativePath": "Livraria/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LivroAPI.Controllers.LivroController",
+    "Method": "AdicionaLivro",
+    "RelativePath": "Livro",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "livroDto",
+        "Type": "LivroAPI.Data.Dtos.CreateLivroDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LivroAPI.Controllers.LivroController",
+    "Method": "RecuperaLivro",
+    "RelativePath": "Livro",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "skip",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "take",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[LivroAPI.Data.Dtos.ReadLivroDto, LivroAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "LivroAPI.Controllers.LivroController",
+    "Method": "RecuperaLivroPorID",
+    "RelativePath": "Livro/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LivroAPI.Controllers.LivroController",
+    "Method": "AtualizaLivro",
+    "RelativePath": "Livro/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "livroDto",
+        "Type": "LivroAPI.Data.Dtos.UpdateLivroDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LivroAPI.Controllers.LivroController",
+    "Method": "AtualizaLivroParcial",
+    "RelativePath": "Livro/{id}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "patch",
+        "Type": "Microsoft.AspNetCore.JsonPatch.Operations.Operation[]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LivroAPI.Controllers.LivroController",
+    "Method": "AtualizaLivroParcial",
+    "RelativePath": "Livro/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PessoaAPI.Controllers.PessoaController",
+    "Method": "AdicionaPessoa",
+    "RelativePath": "Pessoa",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pessoaDto",
+        "Type": "LivroAPI.Data.Dtos.CreatePessoaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PessoaAPI.Controllers.PessoaController",
+    "Method": "RecuperaPessoa",
+    "RelativePath": "Pessoa",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "skip",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "take",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[LivroAPI.Data.Dtos.ReadPessoaDto, LivroAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PessoaAPI.Controllers.PessoaController",
+    "Method": "RecuperaPessoaPorID",
+    "RelativePath": "Pessoa/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PessoaAPI.Controllers.PessoaController",
+    "Method": "AtualizaPessoa",
+    "RelativePath": "Pessoa/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "pessoaDto",
+        "Type": "LivroAPI.Data.Dtos.UpdatePessoaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PessoaAPI.Controllers.PessoaController",
+    "Method": "AtualizaPessoaParcial",
+    "RelativePath": "Pessoa/{id}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "patch",
+        "Type": "Microsoft.AspNetCore.JsonPatch.Operations.Operation[]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PessoaAPI.Controllers.PessoaController",
+    "Method": "AtualizaPessoaParcial",
+    "RelativePath": "Pessoa/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
