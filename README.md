@@ -1,6 +1,6 @@
 # 📚 Simple Library API (C#)
 
-A RESTful API built with ASP.NET Core for managing a library system. It provides full CRUD operations for books, users, addresses, loans, and the library itself.
+A RESTful API built with ASP.NET Core for managing a library system. It provides full CRUD operations for the core entities: `Livro`, `Pessoa`, `Endereco`, `Emprestimo`, and `Livraria`.
 
 ## 🚀 Features
 
@@ -21,44 +21,38 @@ A RESTful API built with ASP.NET Core for managing a library system. It provides
 
 Each entity supports the following operations:
 
-| Entity      | Method  | Endpoint                | Description                              |
-|-------------|---------|-------------------------|------------------------------------------|
-| **Livro**   | GET     | `/livros`               | List all books                           |
-|             | GET     | `/livros/{id}`          | Get a specific book                      |
-|             | POST    | `/livros`               | Add a new book                           |
-|             | PUT     | `/livros/{id}`          | Replace book data                        |
-|             | PATCH   | `/livros/{id}`          | Update book fields                       |
-|             | DELETE  | `/livros/{id}`          | Delete a book                            |
-| **Pessoa**  | GET     | `/pessoas`              | List all users                           |
-|             | GET     | `/pessoas/{id}`         | Get a specific user                      |
-|             | POST    | `/pessoas`              | Add a new user                           |
-|             | PUT     | `/pessoas/{id}`         | Replace user data                        |
-|             | PATCH   | `/pessoas/{id}`         | Update user fields                       |
-|             | DELETE  | `/pessoas/{id}`         | Delete a user                            |
-| **Endereco**| GET     | `/enderecos`            | List all addresses                       |
-|             | GET     | `/enderecos/{id}`       | Get a specific address                   |
-|             | POST    | `/enderecos`            | Add a new address                        |
-|             | PUT     | `/enderecos/{id}`       | Replace address data                     |
-|             | PATCH   | `/enderecos/{id}`       | Update address fields                    |
-|             | DELETE  | `/enderecos/{id}`       | Delete an address                        |
-| **Emprestimo**| GET   | `/emprestimos`          | List all loans                           |
-|             | GET     | `/emprestimos/{id}`     | Get a specific loan                      |
-|             | POST    | `/emprestimos`          | Register a new loan                      |
-|             | PUT     | `/emprestimos/{id}`     | Replace loan data                        |
-|             | PATCH   | `/emprestimos/{id}`     | Update loan fields                       |
-|             | DELETE  | `/emprestimos/{id}`     | Delete a loan                            |
-| **Livraria**| GET     | `/livrarias`            | List all libraries                       |
-|             | GET     | `/livrarias/{id}`       | Get a specific library                   |
-|             | POST    | `/livrarias`            | Add a new library                        |
-|             | PUT     | `/livrarias/{id}`       | Replace library data                     |
-|             | PATCH   | `/livrarias/{id}`       | Update library fields                    |
-|             | DELETE  | `/livrarias/{id}`       | Delete a library                         |
+| Entity       | Method  | Endpoint                 | Description                              |
+|--------------|---------|--------------------------|------------------------------------------|
+| **Livro**     | GET     | `/livro`                 | List all books                           |
+|              | GET     | `/livro/{id}`            | Get a specific book                      |
+|              | POST    | `/livro`                 | Add a new book                           |
+|              | PUT     | `/livro/{id}`            | Replace book data                        |
+|              | PATCH   | `/livro/{id}`            | Update book fields                       |
+|              | DELETE  | `/livro/{id}`            | Delete a book                            |
+| **Pessoa**    | GET     | `/pessoa`                | List all users                           |
+|              | GET     | `/pessoa/{id}`           | Get a specific user                      |
+|              | POST    | `/pessoa`                | Add a new user                           |
+|              | PUT     | `/pessoa/{id}`           | Replace user data                        |
+|              | PATCH   | `/pessoa/{id}`           | Update user fields                       |
+|              | DELETE  | `/pessoa/{id}`           | Delete a user                            |
+| **Endereco**  | GET     | `/endereco`              | List all addresses                       |
+|              | GET     | `/endereco/{id}`         | Get a specific address                   |
+|              | POST    | `/endereco`              | Add a new address                        |
+|              | PUT     | `/endereco/{id}`         | Replace address data                     |
+|              | PATCH   | `/endereco/{id}`         | Update address fields                    |
+|              | DELETE  | `/endereco/{id}`         | Delete an address                        |
+| **Emprestimo**| GET     | `/emprestimo`            | List all loans                           |
+|              | GET     | `/emprestimo/{id}`       | Get a specific loan                      |
+|              | POST    | `/emprestimo`            | Register a new loan                      |
+|              | PUT     | `/emprestimo/{id}`       | Replace loan data                        |
+|              | PATCH   | `/emprestimo/{id}`       | Update loan fields                       |
+|              | DELETE  | `/emprestimo/{id}`       | Delete a loan                            |
+| **Livraria**  | GET     | `/livraria`              | List all libraries                       |
+|              | GET     | `/livraria/{id}`         | Get a specific library                   |
+|              | POST    | `/livraria`              | Add a new library                        |
+|              | PUT     | `/livraria/{id}`         | Replace library data                     |
+|              | PATCH   | `/livraria/{id}`         | Update library fields                    |
+|              | DELETE  | `/livraria/{id}`         | Delete a library                         |
 
 ## 📦 Setup
-
-```bash
-dotnet restore
-dotnet build
-dotnet run
-
 
